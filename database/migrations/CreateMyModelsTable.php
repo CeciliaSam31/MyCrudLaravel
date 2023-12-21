@@ -12,16 +12,18 @@ class CreateYourModelsTable extends Migration
      * @return void
      */
     public function up()
-    {
-        Schema::create('your_models', function (Blueprint $table) {
-            $table->id();
-            $table->string('Name');
-            $table->integer('Age');
-            $table->string('Sex');
-            $table->string('Address');
-            $table->timestamps();
-        });
-    }
+{
+    Schema::create('my_models', function (Blueprint $table) {
+        $table->id();
+        $table->string('name');
+        $table->integer('age');
+        $table->string('sex');
+        $table->string('address');
+        $table->timestamps();
+    });
+}
+
+
 
     /**
      * Reverse the migrations.

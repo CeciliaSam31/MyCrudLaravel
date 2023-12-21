@@ -24,7 +24,7 @@ Auth::routes();
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
 Route::get('/register', [RegistrationController::class, 'showRegistrationForm'])->name('register');
-Route::resource('your-model', CrudController::class);
+Route::resource('my-model', CrudController::class);
 
 
 

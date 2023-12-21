@@ -19,12 +19,12 @@
                 <td>{{ $record->Sex }}</td>
                 <td>{{ $record->Address }}</td>
                 <td>
-                    <a href="{{ route('your-model.show', $record->id) }}">View</a>
-                    <a href="{{ route('your-model.edit', $record->id) }}">Edit</a>
+                    <a href="{{ route('MyModel.show', $record->id) }}">View</a>
+                    <a href="{{ route('MyModel.edit', $record->id) }}">Edit</a>
                 </td>
             </tr>
         @endforeach
     </tbody>
 </table>
 
-<a href="{{ route('your-model.create') }}">Create New Record</a>
+<a href="{{ route('MyModel.create') }}">Create New Record</a>
